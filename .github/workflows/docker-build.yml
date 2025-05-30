@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build Docker image
-      run: docker build -t ghcr.io/eduardfabi/assignment3_sca:latest .
+      run: docker build -t ghcr.io/eduardfabi/assignment3_public:latest .
 
     - name: Push Docker image
-      run: docker push ghcr.io/eduardfabi/assignment3_sca:latest
+      run: docker push ghcr.io/eduardfabi/assignment3_public:latest
