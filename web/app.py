@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 import redis
 
+print("Test für Video")
+
 app = Flask(__name__)
 r = redis.Redis(host='redis', port=6379)
 
